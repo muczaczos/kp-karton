@@ -24,7 +24,6 @@ body {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: 80px 1fr 80px;
-  padding: 64px;
   &__item-left {
     position: sticky; // See link
     top: 0; //to make it stick to the top of the screen
@@ -35,4 +34,24 @@ body {
     top: 0; //to make it stick to the top of the screen
     height: 10vh; // make the height equal to 100 view height
   }
+  &__item-center {
+  }
+}
+
+.site-header {
+  z-index: 0;
+}
+
+.top-circle {
+  height: 500px;
+  width: 500px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.top-section {
+  text-align: center;
 }
