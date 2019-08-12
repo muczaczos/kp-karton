@@ -19,9 +19,9 @@
 
   <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="" />
 
-  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="icon" type="image/png" href="" />
 
   <link rel="stylesheet" href="css/main.css" />
 
@@ -33,11 +33,8 @@
   <div class="top-rectangle"></div>
   <div class="top-circle"></div>
   <div class="top-semicircle"></div>
-  <div class="top-logo">KP-Karton</div>
-  <div class="bottom-socials-icons">Facebook</div>
 
   <header class="site-header">
-
     <nav class="navigation">
       <ul class="navigation__list navigation__list--js">
         <li class="navigation__item"><a class="navigation__link" href="index.html">Start</a></li>
@@ -58,58 +55,67 @@
 
     <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu"> &#x2630;</button>
     <button class="navigation__contact-button" aria-label="kontakt"> Kontakt</button>
-
   </header>
 
-  <main id="top">
+  <main class="grid" id="top">
+    <div class="grid__item-left">
+      <div class="top-logo">KP-Karton</div>
+    </div>
 
-    <section class="top-section">
-      <h1 class="top-section__title">Producent Tacek Tekturowych</h1>
-      <p class="top-section__paragraph">15 lat zajmujemy się produkcją opakowań z tektury falistej. </p>
-      <button class="top-section__button">Sprawdź ofertę</button>
-    </section>
+    <div class="grid__item-center">
+      <section class="top-section">
+        <h1 class="top-section__title">Producent Tacek Tekturowych</h1>
+        <p class="top-section__paragraph">15 lat zajmujemy się produkcją opakowań z tektury falistej. </p>
+        <button class="top-section__button">Sprawdź ofertę</button>
+      </section>
 
-    <section class="apple-section">
-      <i class="material-icons">face</i>
-      <h2 class="apple-section__title">Kartony na owoce</h2>
-      <p class="apple-section__paragraph">W naszej ofercie posiadamy szeroki asortyment kartonów na owoce. Dodatowo
-        znajdą
-        Państwo u nas inne artykuły, pomocne podczas pakowania owoców i transportu np:</p>
-      <ul>
-        <li>Palety</li>
-        <li>Narożniki</li>
-        <li>Tacki tekturowe</li>
-        <li>Taśmy polipropylenowe</li>
-        <li>Zapinki</li>
-        <li>Wytłoczki</li>
-        <li>Przekładki</li>
-        <li>Inne produkty...</li>
-      </ul>
-    </section>
+      <section class="apple-section">
+        <i class="material-icons">face</i>
+        <h2 class="apple-section__title">Kartony na owoce</h2>
+        <p class="apple-section__paragraph">W naszej ofercie posiadamy szeroki asortyment kartonów na owoce. Dodatowo
+          znajdą
+          Państwo u nas inne artykuły, pomocne podczas pakowania owoców i transportu np:</p>
+        <ul>
+          <li>Palety</li>
+          <li>Narożniki</li>
+          <li>Tacki tekturowe</li>
+          <li>Taśmy polipropylenowe</li>
+          <li>Zapinki</li>
+          <li>Wytłoczki</li>
+          <li>Przekładki</li>
+          <li>Inne produkty...</li>
+        </ul>
+      </section>
 
-    <section class="service-section">
-      <i class="material-icons">face</i>
-      <h2 class="service-section__title">Usługi Klejenia</h2>
-      <p class="service-section__paragraph">Od 2003 roku sklejamy kartony otwarte z tektury pięciowarstwowej, używając
-        wysokiej jakości klejów na bazie poliolefiny. Masz problem z klejeniem kartonów? Kolumna krzywo się składa?
-        Możesz
-        skleić karton u nas i zapomnieć o kłopotach.</p>
-    </section>
+      <section class="service-section">
+        <i class="material-icons">face</i>
+        <h2 class="service-section__title">Usługi Klejenia</h2>
+        <p class="service-section__paragraph">Od 2003 roku sklejamy kartony otwarte z tektury pięciowarstwowej, używając
+          wysokiej jakości klejów na bazie poliolefiny. Masz problem z klejeniem kartonów? Kolumna krzywo się składa?
+          Możesz
+          skleić karton u nas i zapomnieć o kłopotach.</p>
+      </section>
 
-    <section class="transport-section">
-      <i class="material-icons">face</i>
-      <h2 class="transport-section__title">Transport Kartonów</h2>
-      <p class="transport-section__paragraph">Nasza flota samochodów ciężarowych, zapewnia stały dostęp do kartonów
-        zarówno mniejszym odbiorcom jak i większym firmom, które wykorzystują tysiące kartonów dziennie. Korzystamy
-        również z pomocy firm spedycyjnych.</p>
-    </section>
+      <section class="transport-section">
+        <i class="material-icons">face</i>
+        <h2 class="transport-section__title">Transport Kartonów</h2>
+        <p class="transport-section__paragraph">Nasza flota samochodów ciężarowych, zapewnia stały dostęp do kartonów
+          zarówno mniejszym odbiorcom jak i większym firmom, które wykorzystują tysiące kartonów dziennie. Korzystamy
+          również z pomocy firm spedycyjnych.</p>
+      </section>
 
+      <footer>
+        <a href="#top" class="top">Na górę</a>
+        Strona producenta opakowań z tektury falistej.
+      </footer>
+    </div>
+
+    <div class="grid__item-right">
+      <div class="top-logo">Facebook</div>
+    </div>
   </main>
 
-  <footer>
-    <a href="#top" class="top">Na górę</a>
-    Strona producenta opakowań z tektury falistej.
-  </footer>
+
 
   <script src="js/main.js"></script>
 </body>
