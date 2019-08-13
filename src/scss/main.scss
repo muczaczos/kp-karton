@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -17,6 +18,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  color: #333;
+  font-family: "Lato", sans-serif;
 }
 
 .grid {
@@ -129,4 +132,22 @@ body {
 
 .top-section {
   text-align: center;
+  &__paragraph {
+    line-height: 10px;
+    font-size: 20px;
+  }
+  &__subtitle {
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 10px;
+  }
+}
+
+.apple-section {
+  &__title {
+  }
 }
