@@ -2,6 +2,28 @@
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:700&display=swap&subset=latin-ext");
 
+.apple-section {
+  width: 80%;
+  margin: 32px auto;
+  max-width: 1600px;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__right {
+    width: 1fr;
+  }
+}
+
+i.material-icons{
+  font-size: 200px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -42,6 +64,11 @@ body {
   }
   &__item-center {
   }
+}
+
+.material-icons {
+  font-size: 144px;
+  text-align: center;
 }
 
 .navigation {
@@ -198,10 +225,5 @@ body {
     font-size: 20px;
     font-weight: normal;
     line-height: 10px;
-  }
-}
-
-.apple-section {
-  &__title {
   }
 }
