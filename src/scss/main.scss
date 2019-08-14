@@ -45,16 +45,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.grid {
+.main {
   width: 100%;
   margin: 0 auto;
   max-width: 1600px;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-columns: 80px 1fr 80px;
 }
 
-.grid__item-right {
+.right-margin {
   height: 100%;
   display: flex;
   position: fixed;
@@ -63,7 +60,7 @@ body {
   right: 0;
 }
 
-.grid__item-left {
+.left-margin {
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -83,7 +80,7 @@ body {
   }
   width: 100%;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 70px;
   z-index: 100;
   &__list {
     display: flex;
@@ -105,10 +102,10 @@ body {
   }
   &__contact-button {
     position: absolute;
-    top: 75px;
+    top: 50px;
     right: 16px;
     width: 150px;
-    height: 70px;
+    height: 60px;
     background-color: transparent;
     border: 0.5px solid black;
     background-image: linear-gradient(to top, gray 50%, transparent 50%);
@@ -116,6 +113,7 @@ body {
     background-size: 100% 200%;
     background-position: top;
     transition: background-position 0.2s ease-in-out;
+    z-index: 100;
     &:hover {
       background-position: bottom;
       cursor: pointer;
@@ -187,7 +185,7 @@ body {
 
 .side-navigation {
   position: absolute;
-  top: 100px;
+  top: 110px;
   right: 10px;
   z-index: 100;
   &__item {
@@ -268,10 +266,11 @@ body {
 
 .top-section {
   text-align: center;
+  margin-top: 70px;
   &__button {
-    margin-top: 28px;
-    width: 200px;
-    height: 70px;
+    margin-top: 32px;
+    width: 170px;
+    height: 60px;
     background-color: transparent;
     border: 1.5px solid gray;
     background-image: linear-gradient(to top, gray 50%, transparent 50%);
