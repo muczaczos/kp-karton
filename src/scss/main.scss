@@ -52,12 +52,6 @@ body {
 }
 
 .right-margin {
-  height: 100%;
-  display: flex;
-  position: fixed;
-  justify-content: flex-end;
-  top: 0;
-  right: 0;
 }
 
 .left-margin {
@@ -70,8 +64,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  &__logo {
   }
   &__paragraph-up {
     margin-left: 30px;
@@ -184,6 +176,33 @@ body {
   }
 }
 
+.right-margin {
+  height: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  &__logo {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  &__social {
+    margin-right: 20px;
+    margin-bottom: 35px;
+  }
+  &__social-link {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 .service-section {
   width: 70%;
   margin: 64px auto;
@@ -208,8 +227,9 @@ body {
 .side-navigation {
   position: fixed;
   top: 110px;
-  right: 10px;
+  right: 5px;
   z-index: 100;
+  opacity: 0.5;
   &__item {
     text-decoration: none;
     font-weight: bold;
@@ -218,6 +238,7 @@ body {
     height: 30px;
     line-height: 14px;
     margin-top: 10px;
+    text-align: right;
     @media (max-width: 1024px) {
       padding: 8px;
       width: 100%;
@@ -228,7 +249,6 @@ body {
     padding: 10px 10px 10px 10px;
     font-family: sans-serif;
     text-transform: uppercase;
-    text-align: center;
     position: relative;
     text-decoration: none;
     display: inline-block;
