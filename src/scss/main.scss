@@ -82,7 +82,9 @@ body {
     margin-left: 60px;
     margin-bottom: 50px;
   }
-  &__social {
+  &__social-link {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -124,7 +126,7 @@ body {
     width: 150px;
     height: 60px;
     background-color: transparent;
-    border: 0.5px solid black;
+    border: 1px solid gray;
     background-image: linear-gradient(to top, gray 50%, transparent 50%);
     background-clip: text, padding-box;
     background-size: 100% 200%;
@@ -135,6 +137,9 @@ body {
       background-position: bottom;
       cursor: pointer;
       color: white;
+    }
+    &:focus {
+      outline: 0;
     }
   }
   &__item {
@@ -289,7 +294,7 @@ body {
     width: 170px;
     height: 60px;
     background-color: transparent;
-    border: 1.5px solid gray;
+    border: 1px solid gray;
     background-image: linear-gradient(to top, gray 50%, transparent 50%);
     background-clip: text, padding-box;
     background-size: 100% 200%;
