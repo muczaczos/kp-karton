@@ -1,6 +1,19 @@
 @import "_normalize";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:700&display=swap&subset=latin-ext");
+@keyframes changeArrowPosition{ 
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(15px);
+
+  }
+  100%{
+    transform: translateY(10px);
+
+  }
+}
 
 .apple-section {
   width: 70%;
@@ -51,8 +64,6 @@ body {
   max-width: 1600px;
 }
 
-.right-margin {
-}
 
 .left-margin {
   height: 100%;
@@ -183,6 +194,7 @@ body {
   justify-content: flex-end;
   top: 0;
   right: 0;
+  
   &__content {
     display: flex;
     flex-direction: column;
@@ -192,6 +204,11 @@ body {
   &__logo {
     margin-top: 20px;
     margin-right: 20px;
+  }
+  &__paragraph-down{
+    animation: changeArrowPosition 1.5s ease-in-out infinite; 
+    background-color: lightgray
+
   }
   &__social {
     margin-right: 20px;
