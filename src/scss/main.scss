@@ -65,8 +65,25 @@ body {
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  top: 0; //to make it stick to the top of the screen
-  left: 0;
+  top: 0px; //to make it stick to the top of the screen
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__logo {
+  }
+  &__paragraph-up {
+    margin-left: 30px;
+    margin-top: 50px;
+    transform: rotate(270deg);
+  }
+  &__paragraph-down {
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+  &__social {
+  }
 }
 
 .material-icons {
