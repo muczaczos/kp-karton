@@ -3,13 +3,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:700&display=swap&subset=latin-ext");
 
 .apple-section {
-  width: 80%;
-  margin: 32px auto;
+  width: 70%;
+  margin: 64px auto;
   max-width: 1600px;
   display: grid;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
   &__left {
     display: flex;
     justify-content: center;
@@ -163,6 +164,27 @@ body {
   }
 }
 
+.service-section {
+  width: 70%;
+  margin: 64px auto;
+  max-width: 1600px;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+  &__left {
+    order: 1;
+    width: 1fr;
+  }
+  &__right {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .side-navigation {
   position: absolute;
   top: 100px;
@@ -241,6 +263,7 @@ body {
   justify-content: center;
   margin-top: 100px;
   transform: scale(0.3);
+  margin-bottom: 100px;
 }
 
 .top-section {
@@ -277,5 +300,25 @@ body {
     font-size: 20px;
     font-weight: normal;
     line-height: 10px;
+  }
+}
+
+.transport-section {
+  width: 70%;
+  margin: 64px auto;
+  max-width: 1600px;
+  display: grid;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__right {
+    width: 1fr;
   }
 }
