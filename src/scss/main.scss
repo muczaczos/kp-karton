@@ -58,6 +58,17 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  &__paragraph{
+    text-align: center;
+  }
+  &__section{
+    padding: 128px;
+  }
+}
+
 .main {
   width: 100%;
   margin: 0 auto;
@@ -203,7 +214,7 @@ body {
   }
   &__logo {
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 21px;
   }
   &__paragraph-down{
     animation: changeArrowPosition 1.5s ease-in-out infinite; 
