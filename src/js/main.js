@@ -28,3 +28,18 @@ $(window).on("load",function() {
 
     }).scroll(); //invoke scroll-handler on page-load
   });
+
+
+	jQuery(document).ready(function() {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			
+		});
+ 
+		jQuery('.right-margin__paragraph-down').click(function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+	});

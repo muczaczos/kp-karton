@@ -104,7 +104,8 @@ body {
     text-align: center;
   }
   &__section {
-    padding: 128px;
+    padding-bottom: 256px;
+    
   }
 }
 
@@ -286,6 +287,7 @@ body {
     margin-right: 21px;
   }
   &__paragraph-down {
+    z-index: 100;
     animation: changeArrowPosition 1.5s ease-in-out infinite;
     background-color: lightgray;
   }
