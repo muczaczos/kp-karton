@@ -1,17 +1,43 @@
 @import "_normalize";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:700&display=swap&subset=latin-ext");
-@keyframes changeArrowPosition{ 
+@mixin menuItem {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  width: 80px;
+  line-height: 14px;
+  opacity: 0;
+  @media (max-width: 1024px) {
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+@keyframes changeArrowPosition {
   0% {
     transform: translateY(10px);
   }
   50% {
     transform: translateY(15px);
-
   }
-  100%{
+  100% {
     transform: translateY(10px);
+  }
+}
 
+@keyframes menuOpacity {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -58,13 +84,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: center;
-  &__paragraph{
+  &__paragraph {
     text-align: center;
   }
-  &__section{
+  &__section {
     padding: 128px;
   }
 }
@@ -74,7 +100,6 @@ body {
   margin: 0 auto;
   max-width: 1600px;
 }
-
 
 .left-margin {
   height: 100%;
@@ -146,6 +171,7 @@ body {
     background-size: 100% 200%;
     background-position: top;
     transition: background-position 0.2s ease-in-out;
+    opacity: 0;
     z-index: 100;
     &:hover {
       background-position: bottom;
@@ -155,17 +181,33 @@ body {
     &:focus {
       outline: 0;
     }
+    animation: menuOpacity 1s ease-in-out 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; //save last animation state
   }
-  &__item {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    width: 80px;
-    line-height: 14px;
-    @media (max-width: 1024px) {
-      padding: 8px;
-      width: 100%;
-    }
+  &__item-1 {
+    @include menuItem;
+    animation: menuOpacity 1s ease-in-out 1;
+    animation-delay: .2s;
+    animation-fill-mode: forwards; //save last animation state
+  }
+  &__item-2 {
+    @include menuItem;
+    animation: menuOpacity 1s ease-in-out 1;
+    animation-delay: .4s;
+    animation-fill-mode: forwards; //save last animation state
+  }
+  &__item-3 {
+    @include menuItem;
+    animation: menuOpacity 1s ease-in-out 1;
+    animation-delay: .6s;
+    animation-fill-mode: forwards; //save last animation state
+  }
+  &__item-4 {
+    @include menuItem;
+    animation: menuOpacity 1s ease-in-out 1;
+    animation-delay: .8s;
+    animation-fill-mode: forwards; //save last animation state
   }
   &__link {
     text-decoration: none;
@@ -205,7 +247,7 @@ body {
   justify-content: flex-end;
   top: 0;
   right: 0;
-  
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -216,10 +258,9 @@ body {
     margin-top: 20px;
     margin-right: 21px;
   }
-  &__paragraph-down{
-    animation: changeArrowPosition 1.5s ease-in-out infinite; 
-    background-color: lightgray
-
+  &__paragraph-down {
+    animation: changeArrowPosition 1.5s ease-in-out infinite;
+    background-color: lightgray;
   }
   &__social {
     margin-right: 20px;
