@@ -42,4 +42,57 @@ $(window).on("load",function() {
 			jQuery('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
-	});
+  });
+  
+
+  $(window).scroll(function() {
+  
+    // selectors
+    var $window = $(window),
+        $body = $('body'),
+        $panel = $('.section-js'),
+        $left = $('.left-margin__social-link'),
+        $leftUp = $('.left-margin__paragraph-up'),
+        $rightMail = $('.right-margin__icon'),
+        $rightArrow = $('.right-margin__arrow');
+    
+    // Change 33% earlier than scroll position so colour is there when you arrive.
+    var scroll = $window.scrollTop() + ($window.height() / 1.5);
+   
+    $panel.each(function () {
+      var $this = $(this);
+      
+      // if position is within range of this panel.
+      // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+      // Remember we set the scroll to 33% earlier in scroll var.
+      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            
+        // Remove all classes on body with color-
+        $body.removeClass(function (index, css) {
+          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $left.removeClass(function (index, css) {
+          return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
+        });
+        $leftUp.removeClass(function (index, css) {
+          return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
+        });
+        $rightMail.removeClass(function (index, css) {
+          return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
+        });
+        $rightArrow.removeClass(function (index, css) {
+          return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
+        });
+       
+       
+         
+        // Add class of currently active div
+        $body.addClass('color-' + $(this).data('color'));
+        $left.addClass('text-' + $(this).data('color'));
+        $leftUp.addClass('text-' + $(this).data('color'));
+        $rightMail.addClass('text-' + $(this).data('color'));
+        $rightArrow.addClass('text-' + $(this).data('color'));
+      }
+    });    
+    
+  }).scroll();
