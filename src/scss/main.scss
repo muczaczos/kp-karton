@@ -98,14 +98,21 @@ body {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   &__paragraph {
     text-align: center;
   }
   &__section {
-    padding-bottom: 256px;
-    
+    padding-bottom: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__subtitle {
+    text-align: center;
+    font-weight: bold;
+  }
+  &__title {
+    padding-bottom: 32px;
   }
 }
 
@@ -408,7 +415,7 @@ body {
   animation: menuOpacity 1s ease-in-out 1;
   animation-delay: 1.8s;
   animation-fill-mode: forwards; //save last animation state
-  &__svg{
+  &__svg {
     animation: changeXposition 0.7s ease-in-out 1;
     animation-delay: 2s;
     animation-fill-mode: forwards; //save last animation state
