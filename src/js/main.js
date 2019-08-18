@@ -96,3 +96,46 @@ $(window).on("load",function() {
     });    
     
   }).scroll();
+
+
+  $(document).ready(function () {
+  
+    'use strict';
+    
+     var c, currentScrollTop = 0,
+         navbar = $('.navigation'),
+         sidenav1 = $('.side-navigation__item-1'),
+         sidenav2 = $('.side-navigation__item-2'),
+         sidenav3 = $('.side-navigation__item-3'),
+         sidenav4 = $('.side-navigation__item-4');
+
+  
+     $(window).scroll(function () {
+        var a = $(window).scrollTop();
+        var b = navbar.height();
+       
+        currentScrollTop = a;
+       
+        if (c < currentScrollTop && a > b + b) {
+          navbar.addClass("scrollUp");
+          sidenav1.removeClass("scrollRight-1");
+          sidenav2.removeClass("scrollRight-2");
+          sidenav3.removeClass("scrollRight-3");
+          sidenav4.removeClass("scrollRight-4");
+
+        } else if (c > currentScrollTop && !(a <= b)) {
+          navbar.removeClass("scrollUp");
+          sidenav1.addClass("scrollRight-1");
+          sidenav2.addClass("scrollRight-2");
+          sidenav3.addClass("scrollRight-3");
+          sidenav4.addClass("scrollRight-4");
+
+        } else if (currentScrollTop == c){
+    
+          
+        }
+        c = currentScrollTop;
+    });
+    
+  });
+
