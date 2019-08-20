@@ -369,9 +369,8 @@ body {
   z-index: 100;
   opacity: 0.5;
   &__item-1 {
-  transform: translateX(-100px);
     @include sideMenuItem;
-    transition: all .4s;
+    transition: all .6s;
   }
   &__item-2 {
     @include sideMenuItem;

@@ -24,7 +24,6 @@ $(window).on("load",function() {
 
       fadeIn(".transport-section", windowBottom);
 
-      fadeIn(".footer", windowBottom);
 
     }).scroll(); //invoke scroll-handler on page-load
   });
@@ -54,7 +53,8 @@ $(window).on("load",function() {
         $left = $('.left-margin__social-link'),
         $leftUp = $('.left-margin__paragraph-up'),
         $rightMail = $('.right-margin__icon'),
-        $rightArrow = $('.right-margin__arrow');
+        $rightArrow = $('.right-margin__arrow'),
+        $sideNav = $('.side-navigation__link');
     
     // Change 33% earlier than scroll position so colour is there when you arrive.
     var scroll = $window.scrollTop() + ($window.height() / 1.5);
@@ -83,6 +83,10 @@ $(window).on("load",function() {
         $rightArrow.removeClass(function (index, css) {
           return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
         });
+
+        $sideNav.removeClass(function (index, css) {
+          return (css.match (/(^|\s)text-\S+/g) || []).join(' ');
+        });
        
        
          
@@ -92,6 +96,8 @@ $(window).on("load",function() {
         $leftUp.addClass('text-' + $(this).data('color'));
         $rightMail.addClass('text-' + $(this).data('color'));
         $rightArrow.addClass('text-' + $(this).data('color'));
+        $sideNav.addClass('text-' + $(this).data('color'));
+
       }
     });    
     
@@ -109,6 +115,8 @@ $(window).on("load",function() {
          sidenav3 = $('.side-navigation__item-3'),
          sidenav4 = $('.side-navigation__item-4');
 
+        
+
   
      $(window).scroll(function () {
         var a = $(window).scrollTop();
@@ -116,6 +124,8 @@ $(window).on("load",function() {
        
         currentScrollTop = a;
        
+       
+
         if (c < currentScrollTop && a > b + b) {
           navbar.addClass("scrollUp");
           sidenav1.removeClass("scrollRight-1");
@@ -129,11 +139,8 @@ $(window).on("load",function() {
           sidenav2.addClass("scrollRight-2");
           sidenav3.addClass("scrollRight-3");
           sidenav4.addClass("scrollRight-4");
-
-        } else if (currentScrollTop == c){
-    
-          
         }
+
         c = currentScrollTop;
     });
     
