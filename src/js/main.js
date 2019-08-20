@@ -109,15 +109,11 @@ $(window).on("load",function() {
     'use strict';
     
      var c, currentScrollTop = 0,
-         navbar = $('.navigation'),
-         sidenav1 = $('.side-navigation__item-1'),
-         sidenav2 = $('.side-navigation__item-2'),
-         sidenav3 = $('.side-navigation__item-3'),
-         sidenav4 = $('.side-navigation__item-4');
-
-        
-
-  
+         navbar = $('.navigation');
+         document.getElementById('item-1').style.transform = 'translateX(70px)';
+         document.getElementById('item-2').style.transform = 'translateX(70px)';
+         document.getElementById('item-3').style.transform = 'translateX(75px)';
+         document.getElementById('item-4').style.transform = 'translateX(75px)';
      $(window).scroll(function () {
         var a = $(window).scrollTop();
         var b = navbar.height();
@@ -128,17 +124,20 @@ $(window).on("load",function() {
 
         if (c < currentScrollTop && a > b + b) {
           navbar.addClass("scrollUp");
-          sidenav1.removeClass("scrollRight-1");
-          sidenav2.removeClass("scrollRight-2");
-          sidenav3.removeClass("scrollRight-3");
-          sidenav4.removeClass("scrollRight-4");
+          document.getElementById('item-1').style.transform = 'translateX(-5px)';
+          document.getElementById('item-2').style.transform = 'translateX(-5px)';
+          document.getElementById('item-3').style.transform = 'translateX(-5px)';
+          document.getElementById('item-4').style.transform = 'translateX(-5px)';
+          
 
         } else if (c > currentScrollTop && !(a <= b)) {
           navbar.removeClass("scrollUp");
-          sidenav1.addClass("scrollRight-1");
-          sidenav2.addClass("scrollRight-2");
-          sidenav3.addClass("scrollRight-3");
-          sidenav4.addClass("scrollRight-4");
+          document.getElementById('item-1').style.transform = 'translateX(70px)';
+          document.getElementById('item-2').style.transform = 'translateX(70px)';
+          document.getElementById('item-3').style.transform = 'translateX(75px)';
+          document.getElementById('item-4').style.transform = 'translateX(75px)';
+       
+          
         }
 
         c = currentScrollTop;
