@@ -740,26 +740,6 @@ body {
         -ms-flex-align: center;
             align-items: center; }
 
-.scrollRight-1 {
-  -webkit-transform: translateX(200px);
-      -ms-transform: translateX(200px);
-          transform: translateX(200px); }
-
-.scrollRight-2 {
-  -webkit-transform: translateX(100px);
-      -ms-transform: translateX(100px);
-          transform: translateX(100px); }
-
-.scrollRight-3 {
-  -webkit-transform: translateX(100px);
-      -ms-transform: translateX(100px);
-          transform: translateX(100px); }
-
-.scrollRight-4 {
-  -webkit-transform: translateX(100px);
-      -ms-transform: translateX(100px);
-          transform: translateX(100px); }
-
 .side-navigation {
   position: fixed;
   top: 110px;
