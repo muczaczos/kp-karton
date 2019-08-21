@@ -14,19 +14,19 @@
   }
 }
 
-@mixin sideMenuItem{
+@mixin sideMenuItem {
   text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    width: 80px;
-    height: 30px;
-    line-height: 14px;
-    margin-top: 10px;
-    text-align: right;
-    @media (max-width: 1024px) {
-      padding: 8px;
-      width: 100%;
-    }
+  font-weight: bold;
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  line-height: 14px;
+  margin-top: 10px;
+  text-align: right;
+  @media (max-width: 1024px) {
+    padding: 8px;
+    width: 100%;
+  }
 }
 
 @keyframes changeArrowPosition {
@@ -86,6 +86,13 @@
   &__right {
     width: 1fr;
   }
+  @media (max-width: 1024px) {
+    width: 80%;
+    grid-template-columns: 1fr;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
 }
 
 i.material-icons {
@@ -117,13 +124,27 @@ body {
   margin: 64px auto;
   max-width: 1600px;
   text-align: center;
+  @media (max-width: 1024px) {
+    margin: 0px auto;
+    width: 80%;
+  }
   &__paragraph {
     text-align: center;
+    @media (max-width: 1024px) {
+      padding-bottom: 8px;
+      grid-template-columns: 1fr;
+      font-size: 20px;
+    }
   }
   &__section {
     padding-bottom: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 1024px) {
+      padding-bottom: 8px;
+      grid-template-columns: 1fr;
+      font-size: 20px;
+    }
   }
   &__subtitle {
     text-align: center;
@@ -131,6 +152,9 @@ body {
   }
   &__title {
     padding-bottom: 32px;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
@@ -146,6 +170,9 @@ body {
   justify-content: flex-start;
   position: fixed;
   top: 0px; //to make it stick to the top of the screen
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
   &__content {
     display: flex;
     flex-direction: column;
@@ -223,6 +250,9 @@ body {
     transition: background-position 0.2s ease-in-out;
     opacity: 0;
     z-index: 100;
+    @media (max-width: 1024px) {
+      display: none;
+    }
     &:hover {
       background-position: bottom;
       cursor: pointer;
@@ -281,7 +311,7 @@ body {
       background: none;
       position: absolute;
       top: 4px;
-      right: 16px;
+      right: 8px;
       z-index: 100;
     }
     @media (min-width: 1025px) {
@@ -297,7 +327,9 @@ body {
   justify-content: flex-end;
   top: 0;
   right: 0;
-
+  @media (max-width: 1024px) {
+    display: none;
+  }
   &__content {
     opacity: 0;
     display: flex;
@@ -337,15 +369,28 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 200px;
   opacity: 1;
+  @media (max-width: 1024px) {
+    width: 80%;
+    grid-template-columns: 1fr;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
   &__left {
     order: 1;
     width: 1fr;
+    @media (max-width: 1024px) {
+      order: 2;
+    }
   }
   &__right {
     order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px) {
+      order: 1;
+    }
   }
 }
 
@@ -355,13 +400,16 @@ body {
   right: 5px;
   z-index: 100;
   opacity: 0.5;
+  @media (max-width: 1024px) {
+    visibility: hidden;
+  }
   &__item-1 {
     @include sideMenuItem;
-    transition: all .6s;
+    transition: all 0.6s;
   }
   &__item-2 {
     @include sideMenuItem;
-    transition: all .8s;
+    transition: all 0.8s;
   }
   &__item-3 {
     @include sideMenuItem;
@@ -454,6 +502,10 @@ body {
 .top-section {
   text-align: center;
   margin-top: 70px;
+  @media (max-width: 1024px) {
+    padding: 32px;
+    margin-top: 1px;
+  }
   &__button {
     opacity: 0;
     margin-top: 32px;
@@ -485,6 +537,10 @@ body {
     animation: menuOpacity 1s ease-in-out 1;
     animation-delay: 1.4s;
     animation-fill-mode: forwards; //save last animation state
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   &__subtitle {
     opacity: 0;
@@ -515,6 +571,13 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 64px;
   opacity: 0;
+  @media (max-width: 1024px) {
+    width: 80%;
+    grid-template-columns: 1fr;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
   &__left {
     display: flex;
     justify-content: center;
