@@ -54,23 +54,25 @@
     </nav>
     <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu"> &#x2630;</button>
 
-    <!-- The overlay Menu -->
-    <div id="myNav" class="overlay">
 
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="http://www.chris-cook.net" target="_blank">HOME</a>
-        <a href="http://www.chris-cook.net" target="_blank">ABOUT</a>
-        <a href="http://www.chris-cook.net" target="_blank">SERVICES</a>
-        <a href="http://www.chris-cook.net" target="_blank">CONTACT</a>
-      </div>
-
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+    
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div onclick="openNav()" class="navMenu">&#9776;</div>
   </header>
 
 
