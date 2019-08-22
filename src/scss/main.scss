@@ -76,7 +76,7 @@ $color-link: #fff;
 }
 
 .apple-section {
-  width: 70%;
+  width: 90%;
   margin: 64px auto;
   max-width: 1600px;
   display: grid;
@@ -93,12 +93,17 @@ $color-link: #fff;
   &__right {
     width: 1fr;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 700px) {
     width: 80%;
     grid-template-columns: 1fr;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 1px;
+    margin-top: 200px;
+  }
+  @media (min-width: 701px) {
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -213,6 +218,7 @@ body {
 .material-icons {
   font-size: 144px;
   text-align: center;
+  color: #1c448e;
 }
 
 .navigation {
@@ -376,18 +382,22 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 200px;
   opacity: 1;
-  @media (max-width: 1024px) {
+  @media (max-width: 700px) {
     width: 80%;
     grid-template-columns: 1fr;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 1px;
   }
+  @media (min-width: 701px) {
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+  }
   &__left {
     order: 1;
     width: 1fr;
-    @media (max-width: 1024px) {
-      order: 2;
+    @media (max-width: 700px) {
+      order: 1;
     }
   }
   &__right {
@@ -395,7 +405,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 1024px) {
+    @media (max-width: 700px) {
       order: 1;
     }
   }
@@ -578,12 +588,16 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 64px;
   opacity: 0;
-  @media (max-width: 1024px) {
+  @media (max-width: 700px) {
     width: 80%;
     grid-template-columns: 1fr;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 1px;
+  }
+  @media (min-width: 701px) {
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
   }
   &__left {
     display: flex;
