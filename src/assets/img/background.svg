@@ -35,6 +35,7 @@ viewBox="0 0 1920 4562" width="1920" height="4562">
 
 .st1{
   fill:gray
+  animation: opacityChange 2s ease-in-out 1;
   }
 
 .st2{

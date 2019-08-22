@@ -611,12 +611,13 @@ body {
 
 /* colours */
 .color-gray {
-  background-color: #dce0d9;
+  background-color: #b5ca8d;
   color: black;
 }
 .text-gray {
   color: #1c448e;
 }
+
 .color-yellow {
   background-color: white;
   color: black;
@@ -629,6 +630,9 @@ body {
   color: white;
 }
 .text-blue {
+  color: white;
+}
+.background-blue {
   color: white;
 }
 .color-dark {
@@ -683,7 +687,7 @@ body {
   }
 
   span {
-    background: $color-main;
+    background: black;
     border: none;
     height: 5px;
     width: 100%;
