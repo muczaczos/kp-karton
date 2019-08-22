@@ -14,6 +14,7 @@ function fadeIn(str, windowBottom) {
   });
 }
 
+/*
 $(window).on("load", function () {
   $(window).scroll(function () {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -27,7 +28,7 @@ $(window).on("load", function () {
 
   }).scroll(); //invoke scroll-handler on page-load
 });
-
+*/
 
 jQuery(document).ready(function () {
   var offset = 220;
