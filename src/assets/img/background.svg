@@ -31,10 +31,11 @@ viewBox="0 0 1920 4562" width="1920" height="4562">
 .st0{
   animation: opacityChange 2s ease-in-out 1;
   opacity: 0.1;
+  fill:#F5D547
   }
 
 .st1{
-  fill:gray
+  fill:#AB3428
   animation: opacityChange 2s ease-in-out 1;
   }
 
@@ -45,7 +46,7 @@ viewBox="0 0 1920 4562" width="1920" height="4562">
   }
 
 .st3{
-  fill:black
+  fill:#AB3428
   }
 
 
