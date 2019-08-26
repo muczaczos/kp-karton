@@ -457,6 +457,9 @@ iframe {
     margin-bottom: 100px;
     margin-top: 0px;
   }
+  @media (min-width: 900px) {
+    margin-top: 200px;
+  }
   &__left {
     order: 1;
     width: 1fr;
