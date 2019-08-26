@@ -36,6 +36,18 @@ $color-link: #fff;
   }
 }
 
+@keyframes rotateHr {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes changeArrowPosition {
   0% {
     transform: translateY(10px);
@@ -186,10 +198,11 @@ body {
 }
 
 .hr-class {
-  width: 1px;
+  width: 2px;
   min-height: 50vh;
   background: black;
   border: none;
+  animation: rotateHr 2s ease-in-out infinite;
 }
 
 .main {
@@ -436,11 +449,13 @@ iframe {
     line-height: 20px;
     letter-spacing: 1px;
     margin-bottom: 100px;
+    margin-top: 50px;
   }
   @media (min-width: 701px) {
     width: 70%;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
+    margin-top: 0px;
   }
   &__left {
     order: 1;
