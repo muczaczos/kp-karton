@@ -55,7 +55,8 @@ $(window).scroll(function () {
     $leftUp = $('.left-margin__paragraph-up'),
     $rightMail = $('.right-margin__icon'),
     $rightArrow = $('.right-margin__arrow'),
-    $sideNav = $('.side-navigation__link');
+    $sideNav = $('.side-navigation__link'),
+    $hr = $('.hr-class');
 
   // Change 33% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop() + ($window.height() / 1.4);
@@ -89,6 +90,10 @@ $(window).scroll(function () {
         return (css.match(/(^|\s)text-\S+/g) || []).join(' ');
       });
 
+      $hr.removeClass(function (index, css) {
+        return (css.match(/(^|\s)background-\S+/g) || []).join(' ');
+      });
+
 
 
       // Add class of currently active div
@@ -98,6 +103,7 @@ $(window).scroll(function () {
       $rightMail.addClass('text-' + $(this).data('color'));
       $rightArrow.addClass('text-' + $(this).data('color'));
       $sideNav.addClass('text-' + $(this).data('color'));
+      $hr.addClass('background-' + $(this).data('color'));
 
     }
   });

@@ -77,13 +77,13 @@ $color-link: #fff;
 
 .apple-section {
   width: 90%;
-  margin: 64px auto;
+  margin: 0 auto;
   max-width: 1600px;
   display: grid;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 64px;
+  margin-top: 200px;
   opacity: 1;
   &__img {
     width: 90%;
@@ -144,9 +144,10 @@ body {
 
 .footer {
   width: 70%;
-  margin: 64px auto;
+  margin: 0px auto;
   max-width: 1600px;
   text-align: center;
+  margin-top: 200px;
   @media (max-width: 1024px) {
     margin: 0px auto;
     width: 80%;
@@ -179,6 +180,13 @@ body {
       display: none;
     }
   }
+}
+
+.hr-class {
+  width: 1px;
+  height: 100px;
+  background: black;
+  border: none;
 }
 
 .main {
@@ -401,14 +409,14 @@ iframe {
 
 .service-section {
   width: 70%;
-  margin: 64px auto;
+  margin: 0px auto;
   max-width: 1600px;
   display: grid;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 200px;
   opacity: 1;
+  margin-top: 200px;
   @media (max-width: 700px) {
     width: 80%;
     grid-template-columns: 1fr;
@@ -527,7 +535,6 @@ iframe {
   justify-content: center;
   margin-top: 100px;
   transform: scale(0.3);
-  margin-bottom: 100px;
   animation: menuOpacity 1s ease-in-out 1;
   animation-delay: 1.8s;
   animation-fill-mode: forwards; //save last animation state
@@ -607,14 +614,14 @@ iframe {
 
 .transport-section {
   width: 70%;
-  margin: 64px auto;
+  margin: 0px auto;
   max-width: 1600px;
   display: grid;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 64px;
   opacity: 1;
+  margin-top: 200px;
   @media (max-width: 700px) {
     width: 80%;
     grid-template-columns: 1fr;
@@ -645,6 +652,10 @@ iframe {
   color: #1c448e;
 }
 
+.background-gray {
+  background: #1c448e;
+}
+
 .color-yellow {
   background-color: white;
   color: black;
@@ -652,6 +663,11 @@ iframe {
 .text-yellow {
   color: #1c448e;
 }
+
+.background-yellow {
+  background: #1c448e;
+}
+
 .color-blue {
   background-color: #1c448e;
   color: white;
@@ -662,6 +678,11 @@ iframe {
 .background-blue {
   color: white;
 }
+
+.background-blue {
+  background: white;
+}
+
 .color-dark {
   background-color: #343434;
   color: white;
@@ -669,6 +690,11 @@ iframe {
 .text-dark {
   color: white;
 }
+
+.background-dark {
+  background: white;
+}
+
 .color-white {
   background-color: white;
 }
