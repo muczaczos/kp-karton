@@ -25,13 +25,13 @@ $color-link: #fff;
     line-height: 20px;
     letter-spacing: 1px;
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: $margin;
   }
   @media (min-width: 701px) {
     width: 70%;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
-    margin-top: 0px;
+    margin-top: $margin;
   }
   @media (min-width: 900px) {
     margin-top: $margin;
@@ -355,7 +355,7 @@ iframe {
     }
   }
   &__contact-button {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 16px;
     width: 150px;
@@ -569,6 +569,35 @@ iframe {
   z-index: 0;
 }
 
+.shop-section {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1600px;
+  margin-top: 200px;
+  opacity: 1;
+  &__title {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  &__row {
+    padding-bottom: 16px;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__product {
+    border: 2px solid blue;
+    height: 200px;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    text-align: center;
+    background: blue;
+    color: white;
+  }
+}
+
 .scrollUp {
   transform: translateY(-100px);
 }
@@ -635,7 +664,8 @@ iframe {
   }
   &__paragraph {
     opacity: 0;
-    line-height: 10px;
+    margin: 0 auto;
+    max-width: 500px;
     font-size: 20px;
     animation: menuOpacity 1s ease-in-out 1;
     animation-delay: 1.4s;
@@ -657,7 +687,7 @@ iframe {
     opacity: 0;
     font-size: 20px;
     font-weight: normal;
-    line-height: 10px;
+    line-height: 20px;
     animation: menuOpacity 1s ease-in-out 1;
     animation-delay: 1.4s;
     animation-fill-mode: forwards; //save last animation state
@@ -992,6 +1022,9 @@ iframe {
     min-height: 50px;
     position: relative;
     opacity: 0;
+    a {
+      color: white;
+    }
   }
   &__block--css {
     margin-bottom: 32px;
