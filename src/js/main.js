@@ -157,3 +157,8 @@ $('#toggle').click(function () {
   $('#overlay').toggleClass('open');
 });
 
+
+//contact info button
+$('#toggle2').click(function () {
+  $('#overlay2').toggleClass('open');
+});

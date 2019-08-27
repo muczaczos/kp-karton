@@ -324,7 +324,11 @@ iframe {
     opacity: 0;
     z-index: 100;
     @media (max-width: 1024px) {
-      display: none;
+      top: 10px;
+      left: 16px;
+      width: 150px;
+      height: 60px;
+      background-image: linear-gradient(to top, #ab3428 50%, transparent 50%);
     }
     &:hover {
       background-position: bottom;
@@ -458,7 +462,7 @@ iframe {
     margin-top: 0px;
   }
   @media (min-width: 900px) {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   &__left {
     order: 1;
@@ -888,6 +892,105 @@ iframe {
 }
 
 @keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, width 0.35s;
+  z-index: 50;
+
+  &:before {
+    content: "";
+    background: #1c448e;
+    left: -55%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: left 0.35s ease;
+  }
+
+  &:after {
+    content: "";
+    background: #ab3428;
+    right: -55%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.35s ease;
+  }
+
+  &.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+
+    .overlay2__block {
+      animation: fadeInRight2 0.5s ease forwards;
+      animation-delay: 0.35s;
+
+      &:nth-of-type(2) {
+        animation-delay: 0.45s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 0.55s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 0.65s;
+      }
+    }
+  }
+  &__section {
+    position: relative;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 100;
+    margin-top: 32px;
+    @media (max-width: 1024px) {
+      margin-top: 80px;
+    }
+  }
+
+  &__block {
+    color: white;
+    display: block;
+    font-size: 30px;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  &__block--css {
+    margin-bottom: 32px;
+  }
+}
+
+@keyframes fadeInRight2 {
   0% {
     opacity: 0;
     left: 20%;
