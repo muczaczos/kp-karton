@@ -8,6 +8,16 @@ $color-main: #1c448e;
 $color-active: #fff;
 $color-link: #fff;
 
+@mixin title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 40px;
+  color: #1c448e;
+  opacity: 0.8;
+}
+
 @mixin section($margin) {
   width: 70%;
   margin: 0px auto;
@@ -588,6 +598,9 @@ iframe {
     margin: 0 auto;
     width: 50%;
     opacity: 0.8;
+    @media (max-width: 700px) {
+      margin-bottom: 64px;
+    }
   }
   &__image {
     width: 100%;
@@ -605,15 +618,16 @@ iframe {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  &__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+  &__title--right {
+    @include title;
     order: 2;
-    font-size: 40px;
-    color: #1c448e;
-    opacity: 0.8;
+  }
+  &__title--left {
+    @include title;
+    order: 1;
+    @media (max-width: 700px) {
+      order: 2;
+    }
   }
   &__row {
     padding-bottom: 16px;
