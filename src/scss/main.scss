@@ -1081,6 +1081,9 @@ iframe {
     min-height: 50px;
     position: relative;
     opacity: 0;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
     a {
       color: white;
     }
