@@ -210,6 +210,9 @@ body {
   color: #333;
   font-family: "Lato", sans-serif;
   transition: background-color 1s ease;
+  @media (max-width: 1024px) {
+    background-size: contain;
+  }
 }
 
 .footer {
