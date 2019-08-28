@@ -575,9 +575,42 @@ iframe {
   max-width: 1600px;
   margin-top: 200px;
   opacity: 1;
-  &__title {
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 128px;
+  }
+  &__icon--left {
+    order: 1;
+    margin: 0 auto;
+    width: 50%;
+    opacity: 0.8;
+  }
+  &__image {
+    width: 100%;
+    background: white;
+  }
+  &__info {
     text-align: center;
-    padding-bottom: 32px;
+    background: white;
+    margin: 0 auto;
+    padding: 8px;
+  }
+  &__list {
+    background: white;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    order: 2;
+    font-size: 40px;
+    color: #1c448e;
+    opacity: 0.8;
   }
   &__row {
     padding-bottom: 16px;
@@ -587,14 +620,15 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
   }
   &__product {
-    border: 2px solid blue;
-    height: 200px;
+    border: 1px solid #1c448e;
   }
   &__subtitle {
     margin: 0 auto;
     text-align: center;
-    background: blue;
+    background: #1c448e;
     color: white;
+    padding: 8px;
+    opacity: 0.8;
   }
 }
 
