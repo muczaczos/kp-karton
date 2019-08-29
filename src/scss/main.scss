@@ -1081,12 +1081,64 @@ iframe {
       margin-top: 80px;
     }
   }
+  &__text {
+    @media (min-width: 320px) {
+      /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+      order: 1;
+    }
+    @media (min-width: 480px) {
+      /* smartphones, Android phones, landscape iPhone */
+      order: 2;
+    }
+    @media (min-width: 600px) {
+      /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    }
+    @media (min-width: 801px) {
+      /* tablet, landscape iPad, lo-res laptops ands desktops */
+      order: 1;
+    }
+    @media (min-width: 1025px) {
+      /* big landscape tablets, laptops, and desktops */
+      order: 1;
+    }
+    @media (min-width: 1281px) {
+      /* hi-res laptops and desktops */
+      order: 1;
+    }
+  }
+  &__map {
+    @media (min-width: 320px) {
+      /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+      order: 2;
+    }
+    @media (min-width: 480px) {
+      /* smartphones, Android phones, landscape iPhone */
+      width: 100%;
+      order: 1;
+    }
+    @media (min-width: 600px) {
+      /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    }
+    @media (min-width: 801px) {
+      /* tablet, landscape iPad, lo-res laptops ands desktops */
+      order: 2;
+    }
+    @media (min-width: 1025px) {
+      /* big landscape tablets, laptops, and desktops */
+      order: 2;
+    }
+    @media (min-width: 1281px) {
+      /* hi-res laptops and desktops */
+      order: 2;
+    }
+  }
   &__at {
     width: 30px;
     @media (max-width: 1024px) {
       width: 20px;
     }
   }
+
   &__block {
     color: white;
     display: block;
@@ -1096,6 +1148,7 @@ iframe {
     min-height: 50px;
     position: relative;
     opacity: 0;
+
     @media (max-width: 1024px) {
       font-size: 20px;
     }
