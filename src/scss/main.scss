@@ -212,6 +212,7 @@ body {
   transition: background-color 1s ease;
   @media (max-width: 1024px) {
     background-size: contain;
+    background-repeat: repeat-x;
   }
 }
 
@@ -1064,6 +1065,7 @@ iframe {
     }
   }
   &__section {
+    display: grid;
     position: relative;
     font-size: 30px;
     font-weight: 300;
@@ -1074,7 +1076,6 @@ iframe {
       margin-top: 80px;
     }
   }
-
   &__block {
     color: white;
     display: block;
