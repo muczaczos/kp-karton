@@ -598,6 +598,8 @@ iframe {
     }
   }
   &__icon--left {
+    display: flex;
+    justify-content: center;
     order: 1;
     margin: 0 auto;
     width: 50%;
@@ -621,6 +623,9 @@ iframe {
     margin: 0 auto;
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+  &__svg {
+    width: 150px;
   }
   &__title--right {
     @include title;
