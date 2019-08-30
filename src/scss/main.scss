@@ -655,6 +655,10 @@ iframe {
   &__product {
     border: 1px solid #1c448e;
     margin-bottom: 80px;
+    transition: transform 0.5s linear;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__subtitle {
     margin: 0 auto;
