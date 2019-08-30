@@ -654,6 +654,7 @@ iframe {
   }
   &__product {
     border: 1px solid #1c448e;
+    margin-bottom: 80px;
   }
   &__subtitle {
     margin: 0 auto;
@@ -1188,7 +1189,22 @@ iframe {
   text-align: center;
 }
 #overlay3 img {
-  margin-top: 6%;
-  width: 600px;
-  height: 400px;
+  @media (min-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    margin-top: 50%;
+    width: 400px;
+    height: 300px;
+  }
+  @media (min-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    margin-top: 1%;
+    width: 400px;
+    height: 300px;
+  }
+  @media (min-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    margin-top: 3%;
+    width: 800px;
+    height: 600px;
+  }
 }
