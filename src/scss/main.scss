@@ -639,10 +639,9 @@ iframe {
     }
   }
   &__row {
-    padding-bottom: 16px;
+    padding-bottom: 32px;
     display: grid;
     grid-column-gap: 16px;
-    grid-row-gap: 16px;
     @media (max-width: 700px) {
       grid-template-columns: 1fr;
     }
@@ -741,6 +740,9 @@ iframe {
     @media (max-width: 1024px) {
       font-size: 20px;
       line-height: 30px;
+    }
+    @media (min-width: 1025px) {
+      max-width: 700px;
     }
   }
   &__subtitle {
@@ -1171,4 +1173,22 @@ iframe {
     opacity: 1;
     left: 0;
   }
+}
+
+#overlay3 {
+  background: rgba(28, 68, 142, 0.8);
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+#overlay3 img {
+  margin-top: 6%;
+  width: 600px;
+  height: 400px;
 }
