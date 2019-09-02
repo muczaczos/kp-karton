@@ -276,6 +276,28 @@ body {
     padding: 13px;
     text-align: center;
   }
+  &__galerry {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__box {
+    border: 1px solid black;
+    margin: 8px;
+  }
+  &__galerry-img {
+    max-width: 100%;
+  }
+  &__galerry-title {
+    text-align: center;
+  }
+  &__img {
+    width: 80%;
+    margin: 0 auto;
+  }
   &__img--left {
     float: left;
     width: 200px;
@@ -287,6 +309,9 @@ body {
     width: 200px;
     height: 200px;
     margin: 16px;
+  }
+  &__paragraph {
+    line-height: 25px;
   }
   &__title {
     font-size: 40px;
