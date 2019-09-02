@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>KP-Karton - Tacki tekturowe producent | Producent tacek tekturowych</title>
+  <meta name="description" content="Description" />
+
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="" />
+
+  <link rel="icon" type="image/png" href="" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header id="top" class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item-1"><a class="navigation__link" href="index.html">Start</a></li>
+        <li class="navigation__item-2"><a class="navigation__link" href="onas.html">O nas</a></li>
+        <li class="navigation__item-3"><a class="navigation__link" href="oferta.html">Oferta</a></li>
+        <li class="navigation__item-4"><a class="navigation__link" href="wiedza.html">Wiedza</a></li>
+      </ul>
+    </nav>
+
+    <nav class="side-navigation">
+      <ul class="side-navigation__list side-navigation__list--js">
+        <li class="side-navigation__item-1" id="item-1"><a class="side-navigation__link" href="index.html">Start</a>
+        </li>
+        <li class="side-navigation__item-2" id="item-2"><a class="side-navigation__link" href="onas.html">O nas</a></li>
+        <li class="side-navigation__item-3" id="item-3"><a class="side-navigation__link" href="oferta.html">Oferta</a>
+        </li>
+        <li class="side-navigation__item-4" id="item-4"><a class="side-navigation__link" href="wiedza.html">Wiedza</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button id="toggle2" class="navigation__contact-button" aria-label="kontakt"> Znajdź nas!</button>
+
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="onas.html">O nas</a></li>
+          <li><a href="oferta.html">Oferta</a></li>
+          <li><a href="wiedza.html">Wiedza</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="overlay2" id="overlay2">
+      <section class="overlay2__section">
+        <div class="overlay2__text">
+          <div class="overlay2__block">KP-Karton K. Piekarniak Sp. J.</div>
+          <div class="overlay2__block">Kobylin 35, 05-600 Grójec, Polska</div>
+          <div class="overlay2__block"><a style="text-decoration: none; color: white;" href="tel:+48502040405">tel. 502
+              04
+              04 05</a></div>
+          <div class="overlay2__block overlay2__block--css"><a style="text-decoration: none;"
+              href="mailto:firma@kp-karton.pl">
+              firma<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="overlay2__at"
+                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="white"
+                  d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z">
+                </path>
+              </svg>kp-karton.pl</a></div>
+        </div>
+        <div class="overlay2__map">
+          <div class="overlay2__block"> <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78796.093956054!2d20.81020398183704!3d51.890566717555245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471922947e688f3f%3A0xd7d16d851792a765!2sKp+%26+Up-Karton+sp.j.!5e0!3m2!1spl!2spl!4v1520506274663"
+              width="800" height="600" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  </header>
+
+
+  <section class="left-margin">
+    <div class="left-margin__content">
+      <div class="left-margin__logo">
+        <p class="left-margin__paragraph-up">KP-Karton</p>
+      </div>
+      <div class="left-margin__social">
+        <p class="left-margin__paragraph-down"><a href="#" class="left-margin__social-link"><i
+              class="left-margin__icon fa fa-facebook" aria-hidden="true"></i></a></p>
+        <p class="left-margin__paragraph-down"><a href="#" class="left-margin__social-link"><i
+              class="left-margin__icon fa fa-twitter"></i></a></p>
+        <p class="left-margin__paragraph-down"><a href="#" class="left-margin__social-link"><i
+              class="left-margin__icon fa fa-instagram"></i></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="right-margin">
+    <div class="right-margin__content">
+      <div class="right-margin__logo">
+        <p class="right-margin__paragraph-up"><a href="mailto:firma@kp-karton.pl" class="right-margin__social-link"><i
+              class="right-margin__icon fa fa-envelope"></i></a></p>
+      </div>
+      <div class="right-margin__social">
+        <p class="right-margin__paragraph-down"> <a href="#" class="top"><i class="material-icons right-margin__arrow"
+              style="font-size: 30px;">arrow_upward</i></a></p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <main class="main">
+
+    <section class="top-section" style="margin-top: 100px;">
+      <h1 class="top-section__title" style="font-weight: 600; font-size: 30px; line-height: 30px;">
+        Ciekawość to pierwszy stopień do... wiedzy.</h1>
+      <p class="top-section__paragraph">Wiedza to ogół wiarygodnych informacji o rzeczywistości, wraz z umiejętnością
+        ich wykorzystywania. Tak mówi Encyklopedia Powszechna, a więcej do powiedzenia w tej materii napewno miałby
+        Platon, Sokrates czy inny Arystoteles. Nam wystarczy pierwsza definicjia i zgodnie z nią, będziemy przedstawiać
+        wiarygodne informacje o produkcji papieru, a czasem pokażemy jak tą wiedzę wykorzystać.</p>
+
+    </section>
+
+
+    <hr class="hr-class" style="margin-top: 220px; background: #1c448e; opacity: 0.2;" />
+
+    <section class="knowledge-section">
+
+      <h2 class="knowledge-section__title">Krótka historia papieru</h2>
+
+      <img class="knowledge-section__img--right" src="../assets/img/papirus2.png">
+      <h3 class="knowledge-section__subtitle">Wykorzystanie drewna w produkcji papieru, to dość nowy wynalazek. Kiedyś
+        do produkcji papieru wykorzystywano trzcine.</h3>
+      <p class="knowledge-section__paragraph"> Egipt. Dziś kojarzy się głównie z piramidami, Sharm El
+        Sheikh, nurkowaniem na pięknych rafach koralowych i terrorystami. Jednak Egipt, to także kolebka naszej
+        cywilizacji, w której to zaczyna się historia papieru. Egipcjanie byli pionierami w tej dziedzinie i produkowali
+        papier z trzciny papirusowej (pl. Cibora papirusowa, łac. Cyperus papyrus). Najstarsze zapiski na papirusie,
+        pochodzą z roku 2400 p.n.e i prawdopodobnie już wtedy był używany jako substytut papieru. Papirus dzielił się na
+        dwa gatunki:
+      </p>
+
+      <ul>
+        <li>hieratyczny, który miał 26cm szerokości i był produkowany z węwnętrznych części łodyg (lepszej jakości
+          papirus)
+        </li>
+        <li>kupiecki, który miał 12cm szerokości i był produkowany z zewnętrznych części łodyg (gorszej jakości papirus)
+        </li>
+      </ul>
+
+      <p class="knowledge-section__paragraph">
+        Papirus lepszej jakości, był oczywiście używany do pisania. Ten gorszej jakości do pakowania produktów.
+        Produkcja papirusu polegała na cięciu miąższu łodygi na cienkie i szerokie paski, które następnie były układane
+        obok siebie. Kolejna warstwa układana była w poprzek, żeby finalnie przyciąć wystające końce i sklepać całość w
+        arkusz, który był suszony na słońcu i wygładzany muszlą lub kością słoniową. [1]
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        Papirus, to jeszcze nie papier, ale przez wiele wieków, był używany jako nośnik pisma i dlatego o nim piszemy. "
+        Prawdziwy" papier wynaleźli Chińczycy. Nie wiadomo kiedy to się dokładnie stało. Według chińskich kronik papier
+        został wynaleziony w 105 r.n.e przez pisarza kancelarnego z dworu cesarza He Di, który to opracował metodę na
+        papier czerpany. Jednak archeologom udało się znaleźć skrawek papieru z Chińskimi znakami, datowany na 8 rok
+        p.n.e. Zatem możliwe, że rok 105 n.e jest datą, kiedy to udało się opracować metodę masowej produkcji papieru.
+        Kancelista Cai Lun, do produkcji papieru używał początkowo kory drzew, jedwabiu i sieci rybnych. Po opracowaniu
+        metody na papier czerpany, do produkcji wykorzystywano tylko szmat jedwabnych i lnianych. Produkcja papieru była
+        tajemnicą, której Chińczycy strzegli przez około 700 lat. Następnie blisko roku 750 n.e. Arabowie pojmali jeńców
+        chińskich, którzy to ujawnili metodą produkcji papieru metodą czerpaną. [2]
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        Dzięki temu papier upowszechnił się na ziemiach Arabskich skąd następnie trafił do Europy. Europa początkowo
+        kupowała papier od Arabów, którzy mieli swojej papiernie w Hiszpanii oraz we Włoszech. Jednak papier Arabski nie
+        nadawał sie zbyt dobrze do naszego klimatu, ponieważ do jego produkcji używano skrobii, która lepiej sprawdzała
+        się w suchym i gorącym klimacie. Pierwsze europejskie papiernie, powstały w XII wieku w Hiszpanii oraz w XIII we
+        Włoszech. Pierwsza Polska papiernia powstała w XV wieku.
+        Proces produkcji papieru został przyśpieszony po wprowadzeniu w 1670r. maszyny (tzw. Holendra), która
+        umożliwiała mielenie surowaca do postaci pulpy, za pomocą noży umieszczonych w kadzi. Masowa produkcja papieru
+        zaczęła się od 1867r. kiedy to na wystawie w Paryżu przedstawiono urządzenie do produkcji papieru z
+        alternatywnych surowców, czyli ścierów drzewnych i celulozy. [2]
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        Stale rosnące zapotrzebowanie na papier i tekture, przyczyniło się do rozwoju technologii i maszyn
+        papierniczych, które w dzisiejszych czasach są w stanie produkować np. papier gazetowy z prędkością 100 km/h. Ze
+        względu na rosnące zapotrzebowanie, dużo papieru na rynku pochodzi z recyklingu. Recykling papieru pozwala na
+        oszczędzanie naszych zasobów leśnych, energii, a także zmniejszenie ilości śmieci na wysypiskach. Poniżej kilka
+        papierowych faktów:[3]
+      </p>
+
+      <div class="knowledge-section__fact" style="background-color: rgba(28, 68, 142, 0.3);">Recykling tony papieru
+        pozwala zaoszczędzić 17 drzew
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(171,52,40, 0.3);">Około 73% każdego wysypiska
+        śmieci to papier i opakowania tekturowe
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(245,213,71, 0.3);">Papier toaletowy zaczęto
+        produkować w IX wieku w Chinach
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(28, 68, 142, 0.3);">37% amerykańskiej pulpy
+        papierowej pochodzi z recyklingu
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(171,52,40, 0.3);">Podczas całego życia,
+        mieszkaniec Ameryki zużywa papier, do produkcji którego potrzeba 465 drzew
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(245,213,71, 0.3);">Pierwszy znak wodny został
+        użyty w XIII wieku we Włoszech
+      </div>
+      <div class="knowledge-section__fact" style="background-color: rgba(28, 68, 142, 0.3);">Każdego dnia Amerykanie
+        kupują 66 milionów gazet i 44 miliony wyrzucają od razu do kosza
+      </div>
+
+      <ol style="margin-top: 64px;">
+        <li>https://pl.wikipedia.org/wiki/Papirus
+        </li>
+        <li>https://pl.wikipedia.org/wiki/Papier</li>
+        <li>http://www.historyofpaper.net/paper-facts/facts-about-paper/</li>
+      </ol>
+
+    </section>
+
+    <div style="margin-top: 64px; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.7);"></div>
+
+    <section class="knowledge-section">
+
+      <h2 class="knowledge-section__title" style="display: flex; justify-content: flex-end;">Laboratorium biurowe</h2>
+
+      <img class="knowledge-section__img--left" src="../assets/img/labo.png">
+      <h3 class="knowledge-section__subtitle">Gramatura, Semi chemicals fluting, kraft, kraft topliner, wellenstoff
+        itp. Nomenklatura papiernicza może przyprawić o zawrót głowy. Jak "zwykły" odbiorca może sprawdzić jakość
+        dostarczonego opakowania? W jaki sposób sprawdzić czy nie zostaliśmy oszukani?</h3>
+      <p class="knowledge-section__paragraph">Pan Kowalski z firmy X
+        proponuje, że sprawdzi naszą ostatnią dostawę opakowań tekturowych, w labolatorium. Czy naprawdę potrzebne jest
+        do tego labolatorium? Czy nie możemy wykonać takiego "badania" w zaciuszu naszego biura? Napewno nie jesteśmy
+        całkiem bezbronni, ale zanim spróbujemy odpowiedzieć na to pytanie poznajmy podstawy.
+        Może was zaskoczę, ale głównym surowcem do produkji opakowań tekturowych jest tektura falista, a głównym
+        surowcem do produkcji tektury falistej jest papier. Wyróżniamy dwie grupy papierów, różniących się
+        właściwościami i zastosowaniem: Linery, których używa się na warstwy płaskie oraz flutingi, na warstwy
+        pofalowane.
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Linery</strong> w zależności od sposobu produkcji i składu dzielimy na:
+      </p>
+
+      <ol>
+        <li>Kraftlinery</li>
+        <li>Testlinery</li>
+      </ol>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Kraftlinery</strong> (potocznie Kraft), to najlepsze i najbardziej poszukiwane papiery, a co za tym
+        idzie drogie. Wszystko dlatego, że mają najlepsze właściwości wytrzymałościowe. Kraftliner składa się głównie z
+        masy celulozowej z niewielkim dodatkiem makulatury.
+        <strong>Testlinery</strong>, to tanie papiery słabszej jakości, produkowane głównie z makulatury. Testlinery
+        składają się z dwóch warstw papieru. Górna warstwa może być produkowana z masy celulozowo siarczanowej, jednak
+        ze względu na ciągły wzrost cen mas celulozowych, testlinery są najczęśiej produkowane z mas wtórnych.
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Flutingi</strong> także dzielimy na dwie grupy:
+      </p>
+
+      <ol>
+        <li>flutingi makulaturowe (Wellentstoff)</li>
+        <li>flutingi półchemiczne (SC Semi Chemical)</li>
+      </ol>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Flutingi makulaturowe</strong> wytwarza się tylko z masy masy wtórnej (makulatura). Dla Poprawienia
+        parametrów
+        mechanicznych takiego papieru, wprowadza się w jego strukturę skrobię. Skrobię dodaje się do masy makulaturowej
+        albo na powierzchnię papieru. Proces ten nazywa się potocznie zaklejaniem.
+        <strong>Fluting półchemiczny</strong> w 70% składa się z masy półchemicznej, otrzymywanej najczęściej z drzew
+        liściastych
+        (głównie brzoza). 30% flutingu półchemicznego stanowi makulatura. [1]
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Tektura falista</strong>, to tektura utworzona z minimum jednej warstwy papieru płaskiego (liner) oraz
+        jednej warstwy papieru pofalowanego (fluting). Takie dwie warstwy składają się na tekturę falistą dwuwarstwową.
+      </p>
+
+      <div class="knowledge-section__galerry">
+        <div class="knowledge-section__box">
+          <h3 class="knowledge-section__galerry-title">Tektura dwuwarstwowa</h3><img
+            class="knowledge-section__galerry-img" src="../assets/img/2-warstwowa.png">
+        </div>
+        <div class="knowledge-section__box">
+          <h3 class="knowledge-section__galerry-title">Tektura trójwarstwowa</h3><img
+            class="knowledge-section__galerry-img" src="../assets/img/3-warstwowa.png">
+        </div>
+        <div class="knowledge-section__box">
+          <h3 class="knowledge-section__galerry-title">Tektura czterowarstwowa</h3><img
+            class="knowledge-section__galerry-img" src="../assets/img/4-warstwowa.png">
+        </div>
+        <div class="knowledge-section__box">
+          <h3 class="knowledge-section__galerry-title">Tektura pięciowarstwowa</h3><img
+            class="knowledge-section__galerry-img" src="../assets/img/5-warstwowa.png">
+        </div>
+      </div>
+
+      <p class="knowledge-section__paragraph">
+        Kolejne rodzaje tektury falistej to: tektura trójwarstwowa, czterowarstwowa, pięiowarstwowa oraz siedmio, a
+        nawet dziewięciowarstwowa. Jak widać na powyższych obrazkach, każdy rodzaj tektury ma ułożone naprzemian,
+        warstwy płaskie oraz pofalowane. Tektury cztero, siedmio i dziewięciowarstwowe są rzadziej spotykane.
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        Fala warstwy pofalowanej (flutingu) może mieć różny profil, który jest zależny od wałów ryflowanych, użytyh
+        podczas produkcji. Mamy 10 rodzajów fal, jednak najczęściej stosowane to: <strong>B</strong>,
+        <strong>C</strong>, <strong>E</strong>. Cechy charakterystyzne fal to:
+      </p>
+
+      <ul>
+        <li>podziałka fali</li>
+        <li>wysokość fali</li>
+        <li>współczynnik pofalowania</li>
+      </ul>
+
+      <p class="knowledge-section__paragraph">
+        Spójrzcie na poniższy rysunek. Wysokość fali zaznaczona jest literką A. To odległość od podstawy do wierzchołka.
+        Podziałka fali jest zaznaczona literką B i jest to odległość między wierzchołkami. Współczynnik pofalowania, to
+        stosunek długości papieru przed pofalowaniem, do długości po sfalowaniu.
+      </p>
+
+      <img class="knowledge-section__img" src="../assets/img/profil.png">
+      A - Wysokość fali; B - podziałka fali
+
+      <p class="knowledge-section__paragraph">
+        Parametry profili danej fali są zależne od rodzaju wałów ryflowanych użytych podczas produkcji i mogą się różnic
+        w zależności od producenta. Poniżej przedstawiam przedziały w których te parametry powinny się mieścić. Pod
+        uwagę bierzemy tylko fale B, C, E. [1]
+      </p>
+
+      <table class="">
+        <tr>
+          <th>Profile</th>
+          <th>Współczynnik pofalowania</th>
+          <th>Wysokość [mm]</th>
+          <th>Podziałka [mm]</th>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>1,20 - 1,35</td>
+          <td>1,1 - 1,4</td>
+          <td>3,2 - 3,7</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>1,26 - 1,48</td>
+          <td>2,3 - 2,8</td>
+          <td>6,1 - 6,6</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>1,35 - 1,56</td>
+          <td>3,4 - 4,0</td>
+          <td>7,4 - 8,3</td>
+        </tr>
+      </table>
+
+      <p class="knowledge-section__paragraph">
+        Zagadnienia przedstawione powyżej, to podstawy które należałoby wiedzieć, zanim zamienimy nasze biuro w
+        laboratorium. Spróbujmy zatem odpowiedzieć na pytanie. Czy możemy zbadać karton w biurze, bez pomocy ze strony
+        laboratorium, którą to oferuje wspomniany na początku Pan przysłowiowy Kowalski? Odpowiedź brzmi - Nie
+        wszystkie właściwości możemy zbadać sami, ale niektóre tak. Spróbujmy więc skupić się na tym, co możemy zrobić
+        sami w biurze.
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        <strong>Gramatura</strong> papieru, tektury to waga jednego metra kwadratowego. Gramatura tektur
+        wielowarstwowych jest
+        znormalizowana, w postaci szeregów gramatur liczb naturalnych. Jednak u każdego producenta, szeregi te mogą
+        wyglądać inaczej. Gramatura może mieć odchylenia i tak przeciętne tolerancje dla gramatur 180g/m2 - 249g/m2 to
+        6%, a dla gramatur 249g/m2 - 449g/m2 to 5%.
+        Do badania gramatury badanej tektury, potrzebna nam będzie waga laboratoryjna z dokładnością przynajmniej 0,1g.
+        Metalowy wykrojnik o wymiarach 10cm x 10cm do wycięcia próbki oraz kawałek tektury falistej do zbadania. Wzór na
+        gramaturę to:
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        g = m/A * 10000
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        g - gramatura próbki, m - masa próbki w gramach, A - powierzchnia próbki w cm2
+      </p>
+
+      <p class="knowledge-section__paragraph">
+        Badanie przeprowadzamy w trzech krokach:
+      </p>
+
+      <ol>
+        <li>wycinamy próbkę 10cm x 10cm (jeżeli nie mamy tak dużego kawałka, to może być 5cm x 5cm)
+        </li>
+        <li>ważymy na wadze
+        </li>
+        <li>podstawiamy dane do powyższego wzoru
+        </li>
+      </ol>
+
+      <p class="knowledge-section__paragraph">
+        Jeżeli wycięty przez nas kawałek waży 9g, to oznacza, że: g = 9g/100cm2 * 10000 = 900g/m2. W ten sposób
+        sprawdziliśmy jaka jest gramatura kartonu i czy dostawca nas nie oszukuje. Należy pamiętać, że aby wyniki były
+        dokładne, trzeba poddać próbkę klimatyzowaniu w temp. 23*C i wilgotności około 50% przez kilka godzin. [2]
+        Badanie gramatury to nie wszystko, co możemy zrobić. Możemy również sprawdzić jaką gramaturę ma każda z warstw
+        naszej tektury. Jeżeli mamy trochę doświadczenia i determinacji, to sprawdzimy także jakiego rodzaju papierów
+        użyto do produkcji naszego pudła, ale o tym w kolejnym artykule...
+      </p>
+
+      <ol>
+        <li>http://www.firmaadams.pl/files/rekomendowane_standardy.pdf?download
+        </li>
+        <li>
+          https://www.google.pl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjAj57q-5HaAhVDDiwKHQi7DVwQFggoMAA&url=http%3A%2F%2Fue.poznan.pl%2Fdata%2Fupload%2Farticles_download%2F22771%2F20140918%2Ftektura-falista.pdf&usg=AOvVaw3tMEsj0-rHRD-LQxK9wtA9
+        </li>
+      </ol>
+
+    </section>
+
+    <footer class="footer" style="margin-bottom: 128px;">
+      <h2 class="footer__title">Producent kartonów otwartych na owoce</h2>
+      <h3 class="footer__subtitle">Dane kontaktowe</h3>
+      <p class="footer__paragraph">
+        KP-Karton K. Piekarniak Sp. J.
+      </p>
+      <p class="footer__paragraph">
+        NIP: 797-18-60-878
+      </p>
+      <section class="footer__section">
+        <div>
+          <p class="footer__subtitle">
+            Adres:
+          </p>
+          <p class="footer__paragraph">
+            Kobylin 35, 05-600 Grójec, Polska
+          </p>
+          <p class="footer__subtitle">
+            Adres email:
+          </p>
+          <p class="footer__paragraph">
+            firma(małpa)kp-karton.pl
+          </p>
+        </div>
+        <div>
+          <p class="footer__subtitle">
+            Telefon:
+          </p>
+          <p class="footer__paragraph">
+            <a style="text-decoration: none; color: black;" href="tel:+48502040405"> 502 04 04 05</a>
+          </p>
+          <p class="footer__subtitle">
+            Koordynaty GPS
+          </p>
+          <p class="footer__paragraph">
+            Długość: 51.886888
+            , Szerokość: 20.879645
+          </p>
+        </div>
+      </section>
+    </footer>
+
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+
+    //gallery mode
+    var $overlay = $('<div id="overlay3"></div>');
+    var $image = $("<img>");
+    $overlay.append($image);
+    $("body").append($overlay);
+    // click event
+    $("#frames-photo-collection a").click(function (event) {
+      event.preventDefault();
+      var imageLocation = $(this).attr("href");
+      $image.attr("src", imageLocation);
+      //Show the overlay.
+      $overlay.show();
+    });
+    $overlay.click(function () {
+      $overlay.hide();
+    });
+  </script>
+
+</body>
+
+</html>
