@@ -298,6 +298,15 @@ body {
     width: 80%;
     margin: 0 auto;
   }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__info-text {
+    padding: 8px;
+    margin-bottom: 64px;
+  }
   &__img--left {
     float: left;
     width: 200px;
