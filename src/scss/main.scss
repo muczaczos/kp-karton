@@ -245,6 +245,21 @@ body {
       font-size: 20px;
     }
   }
+  &__socials {
+    width: 100%;
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    @media (max-width: 1024px) {
+      visibility: visible;
+    }
+  }
+  &__socials-item {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 30px;
+  }
   &__subtitle {
     text-align: center;
     font-weight: bold;
