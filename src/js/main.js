@@ -53,8 +53,8 @@ $(window).scroll(function () {
     $panel = $('.section-js'),
     $left = $('.left-margin__social-link'),
     $leftUp = $('.left-margin__paragraph-up'),
-    $rightMail = $('.right-margin__icon'),
-    $rightArrow = $('.right-margin__arrow'),
+    $rightMail = $('.right-margin__social-link'),
+    $rightArrow = $('.right-margin__social-link'),
     $sideNav = $('.side-navigation__link'),
     $hr = $('.hr-class');
 

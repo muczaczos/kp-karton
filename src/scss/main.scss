@@ -153,6 +153,9 @@ $color-link: #fff;
   grid-template-columns: 1fr 1fr;
   margin-top: 200px;
   opacity: 1;
+  &__icon {
+    width: 200px;
+  }
   &__img {
     width: 90%;
     border: 5px solid #1c448e;
@@ -393,6 +396,15 @@ body {
     animation-delay: 0.2s;
     animation-fill-mode: forwards; //save last animation state
   }
+  &__facebook {
+    width: 10px;
+  }
+  &__twitter {
+    width: 15px;
+  }
+  &__instagram {
+    width: 15px;
+  }
 }
 
 .material-icons {
@@ -579,10 +591,17 @@ iframe {
     text-decoration: none;
     color: #1c448e;
   }
+
+  &__envelope {
+    width: 15px;
+  }
 }
 
 .service-section {
   @include section(200px);
+  &__icon {
+    width: 200px;
+  }
 }
 
 .service-section2 {
@@ -879,6 +898,9 @@ iframe {
   @media (min-width: 701px) {
     width: 70%;
     grid-template-columns: 1fr 1fr;
+  }
+  &__icon {
+    width: 200px;
   }
   &__left {
     display: flex;
